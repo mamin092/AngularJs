@@ -3,12 +3,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="">
+<div ng-app="" ng-init="firstName='Amin'">
 <p>
-    Name:<input type="text" ng-model="name" placeholder="Name">
+  This Name Is: <span ng-bind="firstName"></samp>
   
 </p>
-<p ng-bind="name"></p>
+
 </p>
  </div>
 </body>
