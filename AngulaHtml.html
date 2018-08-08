@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="angularApp.js"></script>
-
 <body>
+ 
+    <div ng-app="" ng-init="quntity=1; cost=5">
 
-<p>Try to change the names.</p>
+        <p>Total tk : {{quntity*cost}}</p>
+    </div>
+                
 
-
-<div ng-app="app" ng-controller="myCtrl">
-First Name: <input type="text", ng-model="firstName"/>
-Last Name: <input type="text", ng-model="lastName"/>
-<br/>
-Full Name : {{firstName + " "+ lastName}}
 </div>
 </body>
 </html>
