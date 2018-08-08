@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="angularApp.js"></script>
+
 <body>
 
-<div ng-app="">
-<p>
-My first expression:{{5+5}}
-</p>
- </div>
+<p>Try to change the names.</p>
+
+
+<div ng-app="app" ng-controller="myCtrl">
+First Name: <input type="text", ng-model="firstName"/>
+Last Name: <input type="text", ng-model="lastName"/>
+<br/>
+Full Name : {{firstName + " "+ lastName}}
+</div>
 </body>
 </html>
